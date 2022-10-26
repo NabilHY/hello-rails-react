@@ -1,0 +1,5 @@
+Greeting.create!(message:"Hello!Webpack!")
+Greeting.create!(message:"Hello!Redux!")
+Greeting.create!(message:"Hello!Ruby!")
+Greeting.create!(message:"Hello!Rails!")
+Greeting.create!(message:"Hello!React!")
