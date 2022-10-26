@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchGreeting } from "../redux/greetingSlice";
+import { fetchGreetings } from "../redux/greetingSlice";
 import { selectGreeting } from "../redux/greetingSlice";
 
 function Greeting() {
-    const dispatch = useDispatch();
     const greeting = useSelector(selectGreeting);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchGreeting());
+        dispatch(fetchGreetings());
     }, [dispatch]);
 
     return (
